@@ -1,6 +1,8 @@
 # workout-cards-swiftui
 Coding challenge that shows a horizontal collection of cards styles to guidelines in SwiftUI.
 
+Check out the [Objective-C version](https://github.com/brenton-crowley/workout-cards-objc)
+
 # Video Demo
 
 https://user-images.githubusercontent.com/1415689/185831086-312fe31f-7ea3-470e-9062-ba6584b4a259.mov
