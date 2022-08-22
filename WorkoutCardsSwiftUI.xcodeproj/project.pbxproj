@@ -11,6 +11,16 @@
 		845BC9E328B2FC2D00D12F21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BC9E228B2FC2D00D12F21 /* ContentView.swift */; };
 		845BC9E528B2FC2F00D12F21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845BC9E428B2FC2F00D12F21 /* Assets.xcassets */; };
 		845BC9E828B2FC2F00D12F21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845BC9E728B2FC2F00D12F21 /* Preview Assets.xcassets */; };
+		845BC9F228B2FE2700D12F21 /* workouts.json in Resources */ = {isa = PBXBuildFile; fileRef = 845BC9F128B2FE2700D12F21 /* workouts.json */; };
+		845BC9F828B2FE3700D12F21 /* Gilroy-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 845BC9F428B2FE3700D12F21 /* Gilroy-SemiBold.otf */; };
+		845BC9F928B2FE3700D12F21 /* Gilroy-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 845BC9F528B2FE3700D12F21 /* Gilroy-Bold.otf */; };
+		845BC9FA28B2FE3700D12F21 /* Gilroy-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 845BC9F628B2FE3700D12F21 /* Gilroy-Medium.otf */; };
+		845BC9FB28B2FE3700D12F21 /* Gilroy-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 845BC9F728B2FE3700D12F21 /* Gilroy-Regular.otf */; };
+		845BC9FE28B2FE5300D12F21 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BC9FD28B2FE5300D12F21 /* Workout.swift */; };
+		845BCA0028B2FED400D12F21 /* WorkoutsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BC9FF28B2FED400D12F21 /* WorkoutsViewModel.swift */; };
+		84D8697F28B2FFE300A5B0D7 /* JSONService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8697E28B2FFE300A5B0D7 /* JSONService.swift */; };
+		84D8698228B3043500A5B0D7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8698128B3043500A5B0D7 /* Extensions.swift */; };
+		84D8698428B30B3900A5B0D7 /* WorkoutCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8698328B30B3900A5B0D7 /* WorkoutCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,17 @@
 		845BC9E228B2FC2D00D12F21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		845BC9E428B2FC2F00D12F21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845BC9E728B2FC2F00D12F21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		845BC9F128B2FE2700D12F21 /* workouts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = workouts.json; sourceTree = "<group>"; };
+		845BC9F428B2FE3700D12F21 /* Gilroy-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.otf"; sourceTree = "<group>"; };
+		845BC9F528B2FE3700D12F21 /* Gilroy-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.otf"; sourceTree = "<group>"; };
+		845BC9F628B2FE3700D12F21 /* Gilroy-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.otf"; sourceTree = "<group>"; };
+		845BC9F728B2FE3700D12F21 /* Gilroy-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.otf"; sourceTree = "<group>"; };
+		845BC9FD28B2FE5300D12F21 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		845BC9FF28B2FED400D12F21 /* WorkoutsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewModel.swift; sourceTree = "<group>"; };
+		84D8697E28B2FFE300A5B0D7 /* JSONService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONService.swift; sourceTree = "<group>"; };
+		84D8698028B303BC00A5B0D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		84D8698128B3043500A5B0D7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		84D8698328B30B3900A5B0D7 /* WorkoutCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +72,15 @@
 		845BC9DF28B2FC2D00D12F21 /* WorkoutCardsSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				84D8698028B303BC00A5B0D7 /* Info.plist */,
 				845BC9E028B2FC2D00D12F21 /* WorkoutCardsSwiftUIApp.swift */,
 				845BC9E228B2FC2D00D12F21 /* ContentView.swift */,
+				845BCA0128B2FF1300D12F21 /* Services */,
+				845BC9FC28B2FE3A00D12F21 /* Gilroy Font */,
+				845BC9F328B2FE2900D12F21 /* Resources */,
+				845BC9F028B2FE0E00D12F21 /* Models */,
+				845BC9EF28B2FE0B00D12F21 /* ViewModels */,
+				845BC9EE28B2FE0800D12F21 /* Views */,
 				845BC9E428B2FC2F00D12F21 /* Assets.xcassets */,
 				845BC9E628B2FC2F00D12F21 /* Preview Content */,
 			);
@@ -65,6 +93,58 @@
 				845BC9E728B2FC2F00D12F21 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		845BC9EE28B2FE0800D12F21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84D8698328B30B3900A5B0D7 /* WorkoutCardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		845BC9EF28B2FE0B00D12F21 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				845BC9FF28B2FED400D12F21 /* WorkoutsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		845BC9F028B2FE0E00D12F21 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				845BC9FD28B2FE5300D12F21 /* Workout.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		845BC9F328B2FE2900D12F21 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				845BC9F128B2FE2700D12F21 /* workouts.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		845BC9FC28B2FE3A00D12F21 /* Gilroy Font */ = {
+			isa = PBXGroup;
+			children = (
+				845BC9F528B2FE3700D12F21 /* Gilroy-Bold.otf */,
+				845BC9F628B2FE3700D12F21 /* Gilroy-Medium.otf */,
+				845BC9F728B2FE3700D12F21 /* Gilroy-Regular.otf */,
+				845BC9F428B2FE3700D12F21 /* Gilroy-SemiBold.otf */,
+			);
+			path = "Gilroy Font";
+			sourceTree = "<group>";
+		};
+		845BCA0128B2FF1300D12F21 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84D8697E28B2FFE300A5B0D7 /* JSONService.swift */,
+				84D8698128B3043500A5B0D7 /* Extensions.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +205,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845BC9FB28B2FE3700D12F21 /* Gilroy-Regular.otf in Resources */,
+				845BC9F828B2FE3700D12F21 /* Gilroy-SemiBold.otf in Resources */,
+				845BC9F228B2FE2700D12F21 /* workouts.json in Resources */,
+				845BC9F928B2FE3700D12F21 /* Gilroy-Bold.otf in Resources */,
 				845BC9E828B2FC2F00D12F21 /* Preview Assets.xcassets in Resources */,
+				845BC9FA28B2FE3700D12F21 /* Gilroy-Medium.otf in Resources */,
 				845BC9E528B2FC2F00D12F21 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +222,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D8698428B30B3900A5B0D7 /* WorkoutCardView.swift in Sources */,
+				845BCA0028B2FED400D12F21 /* WorkoutsViewModel.swift in Sources */,
+				84D8698228B3043500A5B0D7 /* Extensions.swift in Sources */,
+				84D8697F28B2FFE300A5B0D7 /* JSONService.swift in Sources */,
 				845BC9E328B2FC2D00D12F21 /* ContentView.swift in Sources */,
 				845BC9E128B2FC2D00D12F21 /* WorkoutCardsSwiftUIApp.swift in Sources */,
+				845BC9FE28B2FE5300D12F21 /* Workout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +360,7 @@
 				DEVELOPMENT_TEAM = BY93XN74UV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WorkoutCardsSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +390,7 @@
 				DEVELOPMENT_TEAM = BY93XN74UV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WorkoutCardsSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
