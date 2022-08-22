@@ -11,7 +11,10 @@ struct Workout: Hashable, Decodable {
     
     var name, subcategoryName, estimatedDuration, image: String?
     var circuitCount, exerciseCount: Int?
-    
+}
+
+// Store helper properties in an extension to separate from the model details.
+extension Workout {
     var detailText:String {
         
         "\(circuitCount ?? 0) Circuits • \(exerciseCount ?? 0) Exercises • \(estimatedDuration ?? "-") Mins"

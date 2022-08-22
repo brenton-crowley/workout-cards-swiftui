@@ -9,14 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     
+    // Store magic numbers in a private constants file.
     private struct Constants {
         static let titleSize:CGFloat = 30.0
         static let scrollviewHeight:CGFloat = 260.0
-        
-        static let rows = [
-            GridItem(.flexible())
-        ]
-        
         static let noWorkoutsMessage = "No workouts to display!"
     }
     
@@ -24,6 +20,14 @@ struct ContentView: View {
     
     var workouts: [Workout] { model.workouts ?? []}
     
+    var rows: [GridItem] { [
+            GridItem(.flexible())
+        ]
+    }
+    
+    /// I prefer to hide the details of view components in computed properties.
+    /// My hope is that you can read the list and easily drill down into what you want to find.
+    /// For views that require a parameter, I will instead create a function.
     var body: some View {
         VStack (alignment: .leading) {
             titleView
@@ -41,14 +45,14 @@ struct ContentView: View {
     var cardCollection: some View {
         
         ScrollView(.horizontal, showsIndicators: true) {
-            LazyHGrid(rows: Constants.rows) {
+            LazyHGrid(rows: rows) {
                 ForEach(workouts, id:\.self) { workout in
                     makeCardForWorkout(workout)
                         .padding(.leading)
                 }
             }
         }
-        .frame(height: 260.0)
+        .frame(height: Constants.scrollviewHeight)
     }
     
     @ViewBuilder

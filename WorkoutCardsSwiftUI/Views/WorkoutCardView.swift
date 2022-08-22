@@ -39,9 +39,11 @@ struct WorkoutCardView: View {
     var asyncImageView: some View {
         
         AsyncImage(url: imageURL) { img in
-            img
-                .resizable()
-                .scaledToFit()
+            withAnimation {
+                img
+                    .resizable()
+                    .scaledToFit()                
+            }
         } placeholder: {
             Color.lightColor
                 .opacity(0.1)

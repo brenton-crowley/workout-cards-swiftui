@@ -7,13 +7,13 @@
 
 import Foundation
 
+// ViewModel that's instantiated in ContentView
 class WorkoutsViewModel: ObservableObject {
     
-    @Published private(set) var workouts: [Workout]?
+    @Published private(set) var workouts: [Workout]? // Model
     
     init() {
         self.loadWorkouts()
-        dump(workouts)
     }
     
     private func loadWorkouts() {
